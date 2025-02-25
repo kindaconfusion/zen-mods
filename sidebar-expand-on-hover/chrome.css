@@ -264,10 +264,6 @@
             display: flex !important;
         }
     }
-    
-    #zen-sidebar-top-buttons-separator {
-        display: none !important;
-    }
 
     #zen-workspaces-button {
         flex-direction: row !important;
@@ -330,4 +326,27 @@
     #navigator-toolbox:not([zen-has-hover], [has-popup-menu], [movingtab]) #zen-sidebar-bottom-buttons {
         flex-direction: column !important;
     }
+    .tabbrowser-tab {
+        max-width: 40px;
+        max-height: 40px;
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        box-sizing: border-box;
+        flex-shrink: 1;
+        flex-grow: 1;
+        width: 100%;
+  }
+  .zen-workspace-tabs-section {
+        display: flex;
+        flex-direction: column;
+        max-width: 100% !important;
+        overflow: hidden;
+  }
+  #tabbrowser-tabs[orient="vertical"] {
+        overflow: hidden;
+        max-width: 100%;
+        box-sizing: border-box;
+  }
 }
